@@ -1,0 +1,35 @@
+{
+  "name": "nodenews",
+  "version": "0.0.1",
+  "description": "baidu news",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "connect-multiparty": "^2.0.0",
+    "cookie-parser": "^1.4.3",
+    "dateformat": "^1.0.12",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "grunt": "^1.0.1",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-nodemon": "^0.4.2",
+    "jade": "^1.11.0",
+    "moment": "^2.14.1",
+    "morgan": "^1.7.0",
+    "mysql": "^2.11.1",
+    "mysql-activerecord": "^0.8.6",
+    "serve-static": "^1.11.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "baidu",
+    "news"
+  ],
+  "author": "ideanet",
+  "license": "ISC"
+}

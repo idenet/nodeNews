@@ -1,0 +1,239 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+    title 百度新闻
+    link(rel='stylesheet', href='css/style.css')
+  body
+    #root
+      div
+        //- 回到顶部
+        div
+          .go-top-trigger(style='display: none;')
+          .feedback-trigger(style='display: none;')
+        //- 内容
+        div
+          div
+            //- head
+            div
+              //- search
+              div
+                .nav-header-container.clearfix
+                  a.float-left.baidu-icon(href='https://m.baidu.com/')
+                  a.float-left.profile-icon
+                  a.float-right.subscribe-icon
+                  a.float-right.search-icon
+                hr
+              //- title
+              #index_view_navigator
+                ul#navigator.clearfix
+                  li.selected(data-index='1', style='width: 16.6667%;')
+                    b
+                    a(href='#') 精选
+                  li(data-index='2', style='width: 16.6667%;')
+                    b
+                    a(href='#') 百家
+                  li(data-index='3', style='width: 16.6667%;')
+                    b
+                    a(href='#') 本地
+                  li(data-index='4', style='width: 16.6667%;')
+                    b
+                    a(href='#') 娱乐
+                  li(data-index='5', style='width: 16.6667%;')
+                    b
+                    a(href='#') 社会
+                  li(data-index='6', style='width: 16.6667%;')
+                    b
+                    a(href='#') 军事
+                  li(data-index='7', style='width: 16.6667%;')
+                    b
+                    a(href='#') 女人
+                  li(data-index='8', style='width: 16.6667%;')
+                    b
+                    a(href='#') 搞笑
+                  li(data-index='9', style='width: 33.3333%;')
+                    b
+                    a(href='#') 互联网
+                  li(data-index='10', style='width: 16.6667%;')
+                    b
+                    a(href='#') 科技
+                  li(data-index='', style='width: 16.6667%;display:block')
+                    b
+                    a.more(href='#') 更多
+                  li.two(data-index='12', style='width: 16.6667%;')
+                    b
+                    a(href='#') 生活
+                  li.two(data-index='13', style='width: 16.6667%;')
+                    b
+                    a(href='#') 国际
+                  li.two(data-index='14', style='width: 16.6667%;')
+                    b
+                    a(href='#') 国内
+                  li.two(data-index='15', style='width: 16.6667%;')
+                    b
+                    a(href='#') 体育
+                  li.two(data-index='16', style='width: 16.6667%;')
+                    b
+                    a(href='#') 汽车
+                  li.two(data-index='17', style='width: 16.6667%;')
+                    b
+                    a(href='#') 财经
+                  li.two(data-index='18', style='width: 16.6667%;')
+                    b
+                    a(href='#') 房产
+                  li.two(data-index='19', style='width: 16.6667%;')
+                    b
+                    a(href='#') 时尚
+                  li.two(data-index='20', style='width: 16.6667%;')
+                    b
+                    a(href='#') 教育
+                  li.two(data-index='21', style='width: 16.6667%;')
+                    b
+                    a(href='#') 游戏
+                  li.two(data-index='22', style='width: 16.6667%;')
+                    b
+                    a(href='#') 旅游
+                  li.two(data-index='23', style='width: 16.6667%;')
+                    b
+                    a(href='#') 人文
+                  li.two(data-index='24', style='width: 16.6667%;')
+                    b
+                    a(href='#') 创意
+                hr
+                ul#more.clearfix(style='display: none; margin: 0px 5px;')
+                  li(style='width: 16.6667%;')
+                    a(href='/news?tpl=old#rankreporter/day/noword/%E6%97%B6%E6%94%BF%E7%B1%BB') 记者榜
+                  li(style='width: 16.6667%;')
+                    b
+                    a(href='/news?tpl=old#rankmedia/day') 媒体榜
+                  li(style='width: 33.3333%;')
+                    b
+                    a(href='#/subscribe/manage') 删除及排序
+                  li(style='width: 16.6667%;')  
+                  li(style='width: 16.6667%;')
+                    a.less(href='#') 收起
+            //- body
+            div(style='position: relative')
+              div
+                .Carousel
+                  .react-swipe-container.carousel-content(style='overflow: hidden; visibility: visible; position: relative;')
+                    .swiper(style='left: -380px')
+                      //- 3
+                      a.carousel-item(href='#/detail/2721212867356369588/carousel')
+                        div(style='overflow: hidden; height: 213px;')
+                          img(src='img/timg (2).jpeg', alt='奥运跳水泳池蓝水变“绿地”')
+                        p.optons-text
+                          span 奥运跳水泳池蓝水变“绿地”
+                      //- 1
+                      a.carousel-item(href='#/detail/725545000857591781/carousel')
+                        div(style='overflow: hidden; height: 213px;')
+                          img(src='img/timg.jpeg', alt='宁泽涛100米自由泳无缘决赛')
+                        p.optons-text
+                          span 宁泽涛100米自由泳无缘决赛
+                      //- 2
+                      a.carousel-item(href='#/detail/658177700028061241/carousel')
+                        div(style='overflow: hidden; height: 213px;')
+                          img(src='img/timg (1).jpeg', alt='第8金！石智勇举重夺金')
+                        p.optons-text
+                          span 第8金！石智勇举重夺金
+                      //- 3
+                      a.carousel-item(href='#/detail/2721212867356369588/carousel')
+                        div(style='overflow: hidden; height: 213px;')
+                          img(src='img/timg (2).jpeg', alt='奥运跳水泳池蓝水变“绿地”')
+                        p.optons-text
+                          span 奥运跳水泳池蓝水变“绿地”
+                      //- 1
+                      a.carousel-item(href='#/detail/725545000857591781/carousel')
+                        div(style='overflow: hidden; height: 213px;')
+                          img(src='img/timg.jpeg', alt='宁泽涛100米自由泳无缘决赛')
+                        p.optons-text
+                          span 宁泽涛100米自由泳无缘决赛
+                  .carousel-nav
+                    .on(index='1')
+                    div(index='2')
+                    div(index='3')
+                //- 热点
+                .hot-scroll-news-container.clearfix
+                  .hot-scroll-content
+                    .hot-news-icon.float-left
+                      span 热点
+                    ul#scrollbar.hot-news-content.float-left(style='margin-top: 0px;')
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=国家主席习近平任免驻外大使') 国家主席习近平任免驻外大使
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=乒乓女单丁宁夺冠') 乒乓女单丁宁夺冠
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=北京居住证暂行条例') 北京居住证暂行条例
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=大熊猫宝宝满月') 大熊猫宝宝满月
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=男篮小组三连败') 男篮小组三连败
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=秦凯曹缘男双3米板摘铜') 秦凯曹缘男双3米板摘铜
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=男举吕小军摘银') 男举吕小军摘银
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=福原爱错失奖牌') 福原爱错失奖牌
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=机场遇克隆出租') 机场遇克隆出租
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=杨丞琳感激大S') 杨丞琳感激大S
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=女子双人10米台陈若琳刘蕙瑕夺金') 女子双人10米台陈若琳刘蕙瑕夺金
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=奥运男子举重石智勇夺金') 奥运男子举重石智勇夺金
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=女子举重邓薇破纪录夺冠') 女子举重邓薇破纪录夺冠
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=宁泽涛无缘100米自由泳决赛') 宁泽涛无缘100米自由泳决赛
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=菲尔普斯夺冠冲击20金成功') 菲尔普斯夺冠冲击20金成功
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=网售火车票提至6点') 网售火车票提至6点
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=单腿小伙骑到珠峰') 单腿小伙骑到珠峰
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=华天马术创造历史') 华天马术创造历史
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=宋冬野七夕领证') 宋冬野七夕领证
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=孙杨200米自由泳霸气夺金') 孙杨200米自由泳霸气夺金
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=傅园慧破纪录摘铜') 傅园慧破纪录摘铜
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=男子100米仰泳徐嘉余获银牌') 男子100米仰泳徐嘉余获银牌
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=吴敏霞与男友同框') 吴敏霞与男友同框
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=小伙侵入高校系统') 小伙侵入高校系统
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=澳电台向中国道歉') 澳电台向中国道歉
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=19万套保障房空置') 19万套保障房空置
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=北京大姐怒骂不文明游客') 北京大姐怒骂不文明游客
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=辟谣网约车需京籍') 辟谣网约车需京籍
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=中国奖牌暂列第一') 中国奖牌暂列第一
+                      li.hot-news-item
+                        a(href='http://m.baidu.com/s?word=龙清泉举重破纪录中国夺第三金') 龙清泉举重破纪录中国夺第三金
+                //- content
+                .newslist-container
+                  each items in news
+                    .index-list-item(style="display:block")
+                      .index-list-main.showleft
+                          .index-list-image
+                            i.ivideoplay
+                            img(src='/upload/#{items.poster}')
+                          .index-list-main-text
+                            .index-list-main-title #{items.title}
+                            .index-list-bottom
+                              .index-list-main-time
+                                b.tip-time #{moment(items.updateAt).format('MM/DD/YYYY')}
+                                b.tip-hot.tip-fillred #{items.hot}
+    //- 动态加载
+    script(type='text/javascript', src='libs/jquery/dist/jquery.min.js')
+    script(type='text/javascript', src='libs/moment/moment.js')
+    script(type='text/javascript', src='libs/requirejs/require.js', data-main='js/main.js', defer='', async='true')

@@ -1,0 +1,27 @@
+extends ../layout
+
+block content
+  #cont.container
+    .row
+      table.table.table-hover.table-bordered
+        thead
+          tr
+            th 新闻标题
+            th 图片
+            th 时间
+            th 来源
+            th 分类
+            th 更新
+            th 删除
+        tbody
+          each item in news
+            tr(class="item-id-#{item.id}")
+              td #{item.title}
+              td #{item.poster}
+              td #{moment(item.updateAt).format('MM/DD/YYYY')}
+              td #{item.hot}
+              td #{item.content}
+              td: a(target="_blank", href="/admin/news/update/#{item.id}") 修改
+              td
+                button.btn.btn-danger.del(type="button",data-id="#{item.id}") 删除
+  script(src="/js/news.js")

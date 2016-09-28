@@ -1,0 +1,28 @@
+{
+  "name": "nodeNews",
+  "authors": [
+    "idenet <leimiliya@hotmail.com>"
+  ],
+  "description": "nodeNews",
+  "main": "",
+  "keywords": [
+    "baidu",
+    "news"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "requirejs": "^2.3.1",
+    "moment": "^2.14.1"
+  }
+}
